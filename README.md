@@ -18,7 +18,7 @@ The baseline model is a 4-layer Fully Connected Neural Network (Multi-Layer Perc
 * **Optimizer:** AdamW.
 
 ## Results & Error Analysis
-After training for 20 epochs, the model successfully learns the training data but struggles to generalize accurately on the test set. 
+After training for 40 epochs, the model successfully learns the training data but struggles to generalize accurately on the test set. 
 
 **Why does this happen?**
 By using Linear Layers, the 2D images are flattened into a 1D vector. This process destroys the crucial **spatial relationships** and structural details of the face (e.g., the distance between eyes, wrinkles, etc.). 
